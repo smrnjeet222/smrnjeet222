@@ -51,7 +51,7 @@ Hi, I'm Simranjeet Singh, a passionate self-taught programmer/developer from Ind
 </a>
 
 <a href="https://smrnjeet222.github.io/Python_Apps/">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repoPython_Apps&theme=default&title_color=11ab3a" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=Python_Apps&theme=default&title_color=11ab3a" />
 </a>    
 <a href="https://smrnjeet222.github.io">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=smrnjeet222.github.io&theme=default&title_color=11ab3a" />
