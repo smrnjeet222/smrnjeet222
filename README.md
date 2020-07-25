@@ -22,7 +22,6 @@ Hi, I'm Simranjeet Singh, a passionate self-taught programmer/developer from Ind
 
 - 🔭 I’m currently working on my project [AutoMail](https://github.com/LOGOInd/AutoMail)
 - 🌱 I’m currently learning Django
-- 👯 I’m looking to collaborate on [AutoMail](https://github.com/LOGOInd/AutoMail)
 - 💬 Ask me about anything [here](https://github.com/smrnjeet222/smrnjeet222/issues)
 
 **Languages and Tools:**  
