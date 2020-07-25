@@ -22,7 +22,7 @@
 A passionate self-taught programmer/developer from India.
 
 - 🔭 I’m currently working on my project [AutoMail](https://github.com/LOGOInd/AutoMail)
-- 🌱 I’m currently learning Django
+- 🌱 I’m currently learning [Django](https://www.djangoproject.com/)
 - 💬 Ask me about anything [here](https://github.com/smrnjeet222/smrnjeet222/issues)
 
 **Languages and Tools:**
@@ -37,15 +37,13 @@ A passionate self-taught programmer/developer from India.
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/cplusplus.png" title="C++"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/unity.svg" title="UnityEngine"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/blender.png" title="Blender"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/vscode.png" title="VsCode"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/Qt.svg" title="Python GUI"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/mysql.svg" title="Databases"></code>
 
 <br />
-<br />
 
-*NOTE: Top languages does not indicate my skill level or something like that, it's a github metric of which languages i have the most code on github.*
-
-
+_NOTE: Top languages does not indicate my skill level or something like that, it's a github metric of which languages i have the most code on github._
 
 <a href="https://gitstats.me/smrnjeet222">
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=smrnjeet222&count_private=true&theme=default&title_color=11ab3a&hide=javascript,html" />
@@ -59,6 +57,24 @@ A passionate self-taught programmer/developer from India.
 </a>    
 <a href="https://smrnjeet222.github.io/Unity_Gamedevelopment/">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=Unity_Gamedevelopment&theme=default&title_color=11ab3a" />
+</a>
+<a href="https://github.com/smrnjeet222/DS-Algo">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=DS-Algo&theme=default&title_color=11ab3a" />
+</a>
+<a href="https://smrnjeet222.github.io/BLENDER/">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=BLENDER&theme=default&title_color=11ab3a" />
+</a>
+<a href="https://smrnjeet222.github.io/CleanPortfolio/">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=CleanPortfolio&theme=default&title_color=11ab3a" />
+</a>
+<a href="https://editor.p5js.org/smrnjeet222/collections/fvtHa48dt">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=JS-WebD&theme=default&title_color=11ab3a" />
+</a>
+<a href="https://github.com/smrnjeet222/Web_Prototypes">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=Web_Prototypes&theme=default&title_color=11ab3a" />
+</a>
+<a href="https://github.com/smrnjeet222/AutoMail">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=AutoMail&theme=default&title_color=11ab3a" />
 </a>
 
 <br />
