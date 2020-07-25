@@ -39,12 +39,16 @@ A passionate self-taught programmer/developer from India.
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/blender.png" title="Blender"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/Qt.svg" title="Python GUI"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/mysql.svg" title="Databases"></code>
-<br />
 
 <br />
+<br />
+
+*NOTE: Top languages does not indicate my skill level or something like that, it's a github metric of which languages i have the most code on github.*
+
+
 
 <a href="https://gitstats.me/smrnjeet222">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=smrnjeet222&theme=default&title_color=11ab3a&count_private=true&hide=javascript,C#" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=smrnjeet222&count_private=true&theme=default&title_color=11ab3a&hide=javascript,html" />
 </a>
 <a href="https://gitstats.me/smrnjeet222">
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=smrnjeet222&show_icons=true&count_private=true&theme=default&title_color=11ab3a&line_height=33" alt="smrnjeet222's github stats" />
