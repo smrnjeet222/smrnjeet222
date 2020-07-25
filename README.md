@@ -58,24 +58,6 @@ _NOTE: Top languages does not indicate my skill level or something like that, it
 <a href="https://smrnjeet222.github.io/Unity_Gamedevelopment/">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=Unity_Gamedevelopment&theme=default&title_color=11ab3a" />
 </a>
-<a href="https://github.com/smrnjeet222/DS-Algo">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=DS-Algo&theme=default&title_color=11ab3a" />
-</a>
-<a href="https://smrnjeet222.github.io/BLENDER/">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=BLENDER&theme=default&title_color=11ab3a" />
-</a>
-<a href="https://smrnjeet222.github.io/CleanPortfolio/">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=CleanPortfolio&theme=default&title_color=11ab3a" />
-</a>
-<a href="https://editor.p5js.org/smrnjeet222/collections/fvtHa48dt">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=JS-WebD&theme=default&title_color=11ab3a" />
-</a>
-<a href="https://github.com/smrnjeet222/Web_Prototypes">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=Web_Prototypes&theme=default&title_color=11ab3a" />
-</a>
-<a href="https://github.com/smrnjeet222/AutoMail">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=AutoMail&theme=default&title_color=11ab3a" />
-</a>
 
 <br />
 
