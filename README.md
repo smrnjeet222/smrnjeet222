@@ -1,4 +1,4 @@
-<img align="right" width="300px" style="padding-right:250px;" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/me.svg">
+<img align="right" width="300px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/me.svg">
 
 ### Hi there, I'm [Simranjeet!](https://smrnjeet222.github.io/) 👋
 
