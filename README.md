@@ -1,4 +1,5 @@
-### Hi there, I'm [Simranjeet!](https://smrnjeet222.github.io/) 👋 
+### Hi there, I'm [Simranjeet!](https://smrnjeet222.github.io/) 👋     
+
 <a href="https://smrnjeet222.github.io/CleanPortfolio/">
   <img align="left" alt="website" width="20px" src="https://raw.githubusercontent.com/smrnjeet222/CleanPortfolio/master/svgs/icon.png" />
 </a>
@@ -16,7 +17,7 @@
 </a>
 
 <br />
-<br />
+
 
 Hi, I'm Simranjeet Singh, a passionate self-taught programmer/developer from India.
 
@@ -35,6 +36,10 @@ Hi, I'm Simranjeet Singh, a passionate self-taught programmer/developer from Ind
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/git.svg"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/cplusplus.svg"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/unity.svg"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/blender.svg"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/blender.svg"></code> 
+<code>![Profile views](https://gpvc.arturio.dev/smrnjeet222)</code>
+
+
+
 
 
