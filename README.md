@@ -10,7 +10,7 @@
   <img align="left" alt="itch.io" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/instagram.png" />
 </a>
 <a href="https://smrnjeet-22.itch.io/">
-  <img align="left" title="Games" alt="itch.io" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/itch-dot-io.svg" />
+  <img align="left" title="Games" alt="itch.io" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/itchio.png" />
 </a>
 <a href="https://leetcode.com/smrnjeet222/">
   <img align="left" alt="leetCode" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/leetcode.png" />
@@ -49,7 +49,7 @@ _NOTE: Top languages does not indicate my skill level or something like that, it
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=smrnjeet222&count_private=true&theme=default&title_color=11ab3a&hide=javascript,html" />
 </a>
 <a href="https://gitstats.me/smrnjeet222">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=smrnjeet222&show_icons=true&count_private=true&theme=default&title_color=11ab3a&line_height=33" alt="smrnjeet222's github stats" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=smrnjeet222&show_icons=true&count_private=true&theme=default&title_color=11ab3a&line_height=34" alt="smrnjeet222's github stats" />
 </a>
 
 <a href="https://smrnjeet222.github.io/Python_Apps/">
