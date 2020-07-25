@@ -46,12 +46,12 @@ Hi, I'm Simranjeet Singh, a passionate self-taught programmer/developer from Ind
 <a href="https://gitstats.me/smrnjeet222">
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=smrnjeet222&theme=default&title_color=11ab3a&count_private=true&hide=javascript,C#" />
 </a>
-<a href="https://github.com/smrnjeet222">
+<a href="https://gitstats.me/smrnjeet222">
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=smrnjeet222&show_icons=true&count_private=true&theme=default&title_color=11ab3a&line_height=33" alt="smrnjeet222's github stats" />
 </a>
 
-<a href="https://smrnjeet222.github.io/Automail/">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=Automail&theme=default&title_color=11ab3a" />
+<a href="https://smrnjeet222.github.io/Python_Apps/">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repoPython_Apps&theme=default&title_color=11ab3a" />
 </a>    
 <a href="https://smrnjeet222.github.io">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=smrnjeet222.github.io&theme=default&title_color=11ab3a" />
