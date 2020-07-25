@@ -38,9 +38,31 @@ Hi, I'm Simranjeet Singh, a passionate self-taught programmer/developer from Ind
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/cplusplus.svg"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/unity.svg"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/blender.svg"></code> 
-<code>![Profile views](https://gpvc.arturio.dev/smrnjeet222)</code>
+<br />
+
+<br />
 
 
+<a href="https://gitstats.me/smrnjeet222">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=smrnjeet222&theme=default&title_color=11ab3a&count_private=true&hide=javascript,C#" />
+</a>
+<a href="https://github.com/smrnjeet222">
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=smrnjeet222&show_icons=true&count_private=true&theme=default&title_color=11ab3a&line_height=33" alt="smrnjeet222's github stats" />
+</a>
 
+<a href="https://smrnjeet222.github.io/Automail/">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=Automail&theme=default&title_color=11ab3a" />
+</a>    
+<a href="https://smrnjeet222.github.io">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=smrnjeet222.github.io&theme=default&title_color=11ab3a" />
+</a>
 
+<br />
+
+<br />
+
+<p align="center"> 
+  Visitor count<br>
+  <img src="https://profile-counter.glitch.me/smrnjeet222/count.svg" />
+</p>
 
