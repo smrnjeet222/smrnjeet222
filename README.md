@@ -19,7 +19,7 @@
 <br />
 <br />
 
-Hi, I'm Simranjeet Singh, a passionate self-taught programmer/developer from India.
+A passionate self-taught programmer/developer from India.
 
 - 🔭 I’m currently working on my project [AutoMail](https://github.com/LOGOInd/AutoMail)
 - 🌱 I’m currently learning Django
