@@ -10,7 +10,7 @@
   <img align="left" alt="itch.io" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/instagram.png" />
 </a>
 <a href="https://smrnjeet-22.itch.io/">
-  <img align="left" alt="itch.io" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/itch-dot-io.svg" />
+  <img align="left" title="Games" alt="itch.io" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/itch-dot-io.svg" />
 </a>
 <a href="https://leetcode.com/smrnjeet222/">
   <img align="left" alt="leetCode" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/leetcode.png" />
@@ -27,18 +27,18 @@ Hi, I'm Simranjeet Singh, a passionate self-taught programmer/developer from Ind
 
 **Languages and Tools:**
 
-<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/python.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/django.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/javascript.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/nodejs.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/sass.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/bootstrap.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/git.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/cplusplus.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/unity.svg"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/blender.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/Qt.svg"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/mysql.svg"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/python.png" title="Python"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/django.png" title="Django"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/javascript.png" title="Javascript"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/nodejs.png" title="Nodejs"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/sass.png" title="SASS"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/bootstrap.png" title="Bootstrap"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/git.png" title="Git"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/cplusplus.png" title="C++"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/unity.svg" title="UnityEngine"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/blender.png" title="Blender"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/Qt.svg" title="Python GUI"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/mysql.svg" title="Databases"></code>
 <br />
 
 <br />
@@ -53,8 +53,8 @@ Hi, I'm Simranjeet Singh, a passionate self-taught programmer/developer from Ind
 <a href="https://smrnjeet222.github.io/Python_Apps/">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=Python_Apps&theme=default&title_color=11ab3a" />
 </a>    
-<a href="https://smrnjeet222.github.io">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=smrnjeet222.github.io&theme=default&title_color=11ab3a" />
+<a href="https://smrnjeet222.github.io/Unity_Gamedevelopment/">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=Unity_Gamedevelopment&theme=default&title_color=11ab3a" />
 </a>
 
 <br />
