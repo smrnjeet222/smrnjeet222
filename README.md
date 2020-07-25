@@ -1,5 +1,7 @@
 ### Hi there, I'm [Simranjeet!](https://smrnjeet222.github.io/) 👋
 
+<img align="right" width="300px" style="padding-right:150px;" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/me.svg">
+
 <a href="https://smrnjeet222.github.io/CleanPortfolio/">
   <img align="left" alt="website" width="20px" src="https://raw.githubusercontent.com/smrnjeet222/CleanPortfolio/master/svgs/icon.png" />
 </a>
