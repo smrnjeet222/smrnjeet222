@@ -59,8 +59,10 @@ _NOTE: Top languages does not indicate my skill level or something like that, it
 </a>
 
 <br />
-
 <br />
+
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
 
 <p align="center"> 
   Visitor count<br>
