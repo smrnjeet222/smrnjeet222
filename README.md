@@ -11,9 +11,6 @@
 <a href="https://www.instagram.com/smrnjeet_22/">
   <img align="left" alt="itch.io" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/instagram.png" />
 </a>
-<a href="https://smrnjeet-22.itch.io/">
-  <img align="left" title="Games" alt="itch.io" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/itchio.png" />
-</a>
 <a href="https://leetcode.com/smrnjeet222/">
   <img align="left" alt="leetCode" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/leetcode.png" />
 </a>
@@ -21,7 +18,7 @@
 <br />
 <br />
 
-A passionate self-taught programmer/developer from India.
+<p> A passionate self-taught programmer/developer from India. </p>
 
 - 🔭 I’m currently working on my project [AutoMail](https://github.com/LOGOInd/AutoMail)
 - 🌱 I’m currently learning [Django](https://www.djangoproject.com/)
