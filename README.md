@@ -62,49 +62,6 @@ _NOTE: Top languages does not indicate my skill level or something like that, it
 <br />
 
 <!--START_SECTION:waka-->
-**I'm a night 🦉** 
-
-```text
-🌞 Morning    36 commits     █░░░░░░░░░░░░░░░░░░░░░░░░   6.36% 
-🌆 Daytime    209 commits    █████████░░░░░░░░░░░░░░░░   36.93% 
-🌃 Evening    196 commits    ████████░░░░░░░░░░░░░░░░░   34.63% 
-🌙 Night      125 commits    █████░░░░░░░░░░░░░░░░░░░░   22.08%
-
-```
-📅 **I'm Most Productive on Mondays** 
-
-```text
-Monday       103 commits    ████░░░░░░░░░░░░░░░░░░░░░   18.2% 
-Tuesday      61 commits     ██░░░░░░░░░░░░░░░░░░░░░░░   10.78% 
-Wednesday    70 commits     ███░░░░░░░░░░░░░░░░░░░░░░   12.37% 
-Thursday     90 commits     ████░░░░░░░░░░░░░░░░░░░░░   15.9% 
-Friday       68 commits     ███░░░░░░░░░░░░░░░░░░░░░░   12.01% 
-Saturday     90 commits     ████░░░░░░░░░░░░░░░░░░░░░   15.9% 
-Sunday       84 commits     ███░░░░░░░░░░░░░░░░░░░░░░   14.84%
-
-```
-
-
-📊 **This week I spent my time on** 
-
-```text
-⌚︎ Timezone: Asia/Calcutta
-
-💬 Languages: 
-No Activity tracked this Week
-
-🔥 Editors: 
-No Activity tracked this Week
-
-🐱‍💻 Projects: 
-No Activity tracked this Week
-
-💻 Operating Systems: 
-No Activity tracked this Week
-
-```
-
-
 <!--END_SECTION:waka-->
 
 <p align="center"> 
