@@ -1,6 +1,6 @@
-<img align="right" width="300px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/me.svg">
-
 ### Hi there, I'm [Simranjeet!](https://smrnjeet222.github.io/) 👋
+
+<img align="right" width="300px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/me.svg">
 
 <a href="https://smrnjeet222.github.io/CleanPortfolio/">
   <img align="left" alt="website" width="20px" src="https://raw.githubusercontent.com/smrnjeet222/CleanPortfolio/master/svgs/icon.png" />
@@ -48,7 +48,7 @@ A passionate self-taught programmer/developer from India.
 _NOTE: Top languages does not indicate my skill level or something like that, it's a github metric of which languages i have the most code on github._
 
 <a href="https://gitstats.me/smrnjeet222">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=smrnjeet222&count_private=true&theme=default&title_color=11ab3a&hide=javascript,html" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=smrnjeet222&count_private=true&theme=default&title_color=11ab3a&hide=html,c%23" />
 </a>
 <a href="https://gitstats.me/smrnjeet222">
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=smrnjeet222&show_icons=true&count_private=true&theme=default&title_color=11ab3a&line_height=33" alt="smrnjeet222's github stats" />
