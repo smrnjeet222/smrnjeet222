@@ -66,25 +66,13 @@ _NOTE: Top languages does not indicate my skill level or something like that, it
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I've%20written-1.9%20million%20Lines%20of%20code-blue)
 
-**🐱 My GitHub Data** 
-
-> 🏆 471 Contributions in year 2020
- > 
-> 📦 Used 0 Bytes in GitHub's Storage 
- > 
-> 💼 Opted to Hire
- > 
-> 📜 18 Public Repository 
- > 
-> 🔑 None Owned Private Repository 
-
 **I'm a night 🦉** 
 
 ```text
-🌞 Morning    36 commits     █░░░░░░░░░░░░░░░░░░░░░░░░   6.01% 
-🌆 Daytime    220 commits    █████████░░░░░░░░░░░░░░░░   36.73% 
-🌃 Evening    198 commits    ████████░░░░░░░░░░░░░░░░░   33.06% 
-🌙 Night      145 commits    ██████░░░░░░░░░░░░░░░░░░░   24.21%
+🌞 Morning    36 commits     █░░░░░░░░░░░░░░░░░░░░░░░░   5.99% 
+🌆 Daytime    220 commits    █████████░░░░░░░░░░░░░░░░   36.61% 
+🌃 Evening    198 commits    ████████░░░░░░░░░░░░░░░░░   32.95% 
+🌙 Night      147 commits    ██████░░░░░░░░░░░░░░░░░░░   24.46%
 
 ```
 
