@@ -20,7 +20,7 @@
 
 <p> A passionate self-taught programmer/developer from India. </p>
 
-- 🔭 I’m currently working on my project [AutoMail](https://github.com/LOGOInd/AutoMail)
+- 🔭 I’m currently working on my project [AutoMail](https://github.com/smrnjeet222/AutoMail)
 - 🌱 I’m currently learning [Django](https://www.djangoproject.com/)
 - 💬 Ask me about anything [here](https://github.com/smrnjeet222/smrnjeet222/issues)
 
