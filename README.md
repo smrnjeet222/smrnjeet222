@@ -21,7 +21,7 @@
 <p> A passionate self-taught programmer/developer from India. </p>
 
 - 🔭 I’m currently working on my project [AutoMail](https://github.com/smrnjeet222/AutoMail)
-- 🌱 I’m currently learning [Django](https://www.djangoproject.com/)
+- 🌱 I’m currently learning [Django](https://smrnjeetblogs.herokuapp.com/)
 - 💬 Ask me about anything [here](https://github.com/smrnjeet222/smrnjeet222/issues)
 
 **Languages and Tools:**
