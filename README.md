@@ -1,4 +1,4 @@
-### Hi there, I'm [Simranjeet!](https://smrnjeet222.github.io/) 👋
+### Hi there, I'm [Simranjeet!](https://smrnjeet222.github.io/) <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="25px" />
 
 <img align="right" width="300px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/me.svg">
 
