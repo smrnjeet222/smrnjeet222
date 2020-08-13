@@ -2,8 +2,8 @@
 
 <img align="right" width="300px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/me.svg">
 
-<a href="https://smrnjeet222.github.io/CleanPortfolio/">
-  <img align="left" alt="website" width="26px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/logo.png" />
+<a href="https://smrnjeet222.github.io/Portfolio/">
+  <img align="left" alt="website" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/logo.png" />
 </a>
 <a href="https://twitter.com/Att_Sardar_ji">
   <img align="left" alt="Twitter" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/twitter.png" />
