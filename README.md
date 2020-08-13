@@ -3,7 +3,7 @@
 <img align="right" width="300px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/me.svg">
 
 <a href="https://smrnjeet222.github.io/CleanPortfolio/">
-  <img align="left" alt="website" width="20px" src="https://raw.githubusercontent.com/smrnjeet222/CleanPortfolio/master/svgs/icon.png" />
+  <img align="left" alt="website" width="26px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/logo.png" />
 </a>
 <a href="https://twitter.com/Att_Sardar_ji">
   <img align="left" alt="Twitter" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/twitter.png" />
@@ -28,6 +28,7 @@
 
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/python.png" title="Python"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/django.png" title="Django"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/react.png" title="React"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/javascript.png" title="Javascript"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/nodejs.png" title="Nodejs"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/sass.png" title="SASS"></code>
@@ -37,7 +38,7 @@
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/unity.svg" title="UnityEngine"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/blender.png" title="Blender"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/vscode.png" title="VsCode"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/Qt.svg" title="Python GUI"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/pygame.png" title="Pygame"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/mysql.svg" title="Databases"></code>
 
 <br />
