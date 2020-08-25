@@ -62,28 +62,6 @@ _NOTE: Top languages does not indicate my skill level or something like that, it
 <br />
 <br />
 
-<!--START_SECTION:waka-->
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-2.0%20million%20lines%20of%20code-blue)
-
-**I'm a Night 🦉** 
-
-```text
-🌞 Morning    36 commits     █░░░░░░░░░░░░░░░░░░░░░░░░   5.29% 
-🌆 Daytime    229 commits    ████████░░░░░░░░░░░░░░░░░   33.68% 
-🌃 Evening    234 commits    ████████░░░░░░░░░░░░░░░░░   34.41% 
-🌙 Night      181 commits    ██████░░░░░░░░░░░░░░░░░░░   26.62%
-
-```
-
-
-📊 **This Week I Spent My Time On** 
-
-```text
-```
-
-
-<!--END_SECTION:waka-->
-
 <p align="center"> 
   Visitor count<br>
   <img src="https://profile-counter.glitch.me/smrnjeet222/count.svg" />
