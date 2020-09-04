@@ -21,7 +21,7 @@
 <p> A passionate self-taught programmer/developer from India. </p>
 
 - 🔭 I’m currently working on my project [AutoMail](https://github.com/smrnjeet222/AutoMail)
-- 🌱 I’m currently learning [Django](https://smrnjeetblogs.herokuapp.com/)
+- 🌱 I’m currently learning [React](https://smrnjeet222.github.io/ReactApps/)+[Django](https://smrnjeetblogs.herokuapp.com/)
 - 💬 Ask me about anything [here](https://github.com/smrnjeet222/smrnjeet222/issues)
 
 **Languages and Tools:**
@@ -30,7 +30,7 @@
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/django.png" title="Django"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/react.png" title="React"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/javascript.png" title="Javascript"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/nodejs.png" title="Nodejs"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/go.png" title="GoLang"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/sass.png" title="SASS"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/bootstrap.png" title="Bootstrap"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/git.png" title="Git"></code>
@@ -55,8 +55,8 @@ _NOTE: Top languages does not indicate my skill level or something like that, it
 <a href="https://smrnjeet222.github.io/Python_Apps/">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=Python_Apps&theme=default&title_color=11ab3a" />
 </a>    
-<a href="https://smrnjeet222.github.io/recipe-app/">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=recipe-app&theme=default&title_color=11ab3a" />
+<a href="https://smrnjeet-picogram.web.app/">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=PicoGram&theme=default&title_color=11ab3a" />
 </a>
 
 <br />
