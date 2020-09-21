@@ -24,6 +24,7 @@
 - 🌱 I’m currently learning [React](https://smrnjeet222.github.io/ReactApps/)+[Django](https://smrnjeetblogs.herokuapp.com/)
 - 💬 Ask me about anything [here](https://github.com/smrnjeet222/smrnjeet222/issues)
 
+
 **Languages and Tools:**
 
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/python.png" title="Python"></code>
@@ -43,7 +44,10 @@
 
 <br />
 
-_NOTE: Top languages does not indicate my skill level or something like that, it's a github metric of which languages i have the most code on github._
+<details>
+  <summary> Note: </summary>
+  <small>Top languages does not indicate my skill level or something like that, it's a github metric of which languages i have the most code on github.</small>
+</details>
 
 <a href="https://gitstats.me/smrnjeet222">
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=smrnjeet222&count_private=true&theme=default&title_color=11ab3a&hide=HLSL,html,ASP" />
@@ -61,6 +65,8 @@ _NOTE: Top languages does not indicate my skill level or something like that, it
 
 <br />
 <br />
+
+
 
 <p align="center"> 
   Visitor count<br>
