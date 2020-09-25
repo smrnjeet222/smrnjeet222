@@ -50,7 +50,7 @@
 </details>
 
 <a href="https://gitstats.me/smrnjeet222">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=smrnjeet222&count_private=true&theme=default&title_color=11ab3a&hide=HLSL,html,ASP" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=smrnjeet222&count_private=true&theme=default&title_color=11ab3a&hide=HLSL,html,ASP,c%23" />
 </a>
 <a href="https://gitstats.me/smrnjeet222">
   <img align="center" src="https://github-readme-stats.vercel.app/api?username=smrnjeet222&show_icons=true&count_private=true&theme=default&title_color=11ab3a&line_height=26" alt="smrnjeet222's github stats" />
