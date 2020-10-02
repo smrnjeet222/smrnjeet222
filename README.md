@@ -60,7 +60,7 @@
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=Python_Apps&theme=default&title_color=11ab3a" />
 </a>    
 <a href="https://smrnjeet-picogram.web.app/">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=PicoGram&theme=default&title_color=11ab3a" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=newslaundry&theme=default&title_color=11ab3a" />
 </a>
 
 <br />
