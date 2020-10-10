@@ -33,7 +33,6 @@
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/javascript.png" title="Javascript"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/go.png" title="GoLang"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/sass.png" title="SASS"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/bootstrap.png" title="Bootstrap"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/git.png" title="Git"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/cplusplus.png" title="C++"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/unity.svg" title="UnityEngine"></code>
@@ -59,7 +58,7 @@
 <a href="https://smrnjeet222.github.io/Python_Apps/">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=Python_Apps&theme=default&title_color=11ab3a" />
 </a>    
-<a href="https://smrnjeet-picogram.web.app/">
+<a href="https://smrnjeet222.github.io/newslaundry/">
   <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=smrnjeet222&repo=newslaundry&theme=default&title_color=11ab3a" />
 </a>
 
