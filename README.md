@@ -1,6 +1,6 @@
 ### Hi there, I'm [Simranjeet!](https://smrnjeet222.github.io/) <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="25px" />
 
-<img align="right" width="300px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/me.svg">
+<img align="right" width="300px" height="700px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/me.svg">
 
 <a href="https://smrnjeet222.github.io/Portfolio/">
   <img align="left" alt="website" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/logo.png" />
@@ -15,15 +15,40 @@
   <img align="left" alt="leetCode" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/leetcode.png" />
 </a>
 
+A passionate self-taught programmer/developer from India.
+
 <br />
+
+### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...
+
 <br />
 
-<p> A passionate self-taught programmer/developer from India. </p>
-
-- 🔭 I’m currently working on my project [AutoMail](https://github.com/smrnjeet222/AutoMail)
-- 🌱 I’m currently learning [React](https://smrnjeet222.github.io/ReactApps/)+[Django](https://smrnjeetblogs.herokuapp.com/)
-- 💬 Ask me about anything [here](https://github.com/smrnjeet222/smrnjeet222/issues)
-
+```javascript
+const simranjeet = {
+  pronouns: "He" | "Him",
+  code: ["Typescript", "Python🐍", "C/C++"],
+  askMeAbout: ["web dev", "tech", "hardware👨‍💻", "games🎮"],
+  technologies: {
+    frontEnd: {
+      js: ["react", "nextjs", "gatsby"],
+      css: ["FramerMotion", "sass", "materialUI", "bootstrap"],
+    },
+    backEnd: {
+      js: ["node", "express"],
+      python: ["django", "flask"],
+    },
+    mobileApp: ["react-native"],
+    devOps: ["Git", "Docker🐳"],
+    databases: ["mongo", "MySql", "sqlite"],
+    software: ["Unity", "Blender", "VsCode", "Photoshop"],
+    misc: ["firebase", "data-science", "web-scraping", "open-cv", "pygame"],
+  },
+  architecture: ["Progressive web applications", "Single page applications"],
+  currentFocus: "Comptetive Programming using C++",
+  funFact:
+    "In order to understand recursion, one must first understand recursion",
+};
+```
 
 **Languages and Tools:**
 
@@ -64,8 +89,6 @@
 
 <br />
 <br />
-
-
 
 <p align="center"> 
   Visitor count<br>
