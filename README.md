@@ -1,6 +1,6 @@
 ### Hi there, I'm [Simranjeet!](https://smrnjeet222.github.io/) <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="25px" />
 
-<img align="right" width="250px" height="700px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/me.svg">
+<img align="right" width="250px" height="500px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/me.svg">
 
 <a href="https://smrnjeet222.github.io/">
   <img align="left" alt="website" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/logo.png" />
@@ -64,7 +64,7 @@ const simranjeet = {
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/pygame.png" title="Pygame"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/mysql.svg" title="Databases">
 </code>
-&nbsp;&nbsp; &nbsp; &nbsp; ![](https://visitor-badge.glitch.me/badge?page_id=smrnjeet222.smrnjeet222)
+&nbsp;&nbsp;![](https://visitor-badge.glitch.me/badge?page_id=smrnjeet222.smrnjeet222)
 
 <br />
 
