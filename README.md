@@ -15,14 +15,7 @@
   <img align="left" alt="leetCode" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/leetcode.png" />
 </a>
 
-A passionate self-taught programmer/developer from India.
-
-<br />
-
 ### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...
-
-<br />
-
 ```javascript
 const simranjeet = {
   pronouns: "He" | "Him",
