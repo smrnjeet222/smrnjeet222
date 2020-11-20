@@ -35,7 +35,7 @@ let simranjeet = {
   askMeAbout: ["web dev", "tech", "hardware👨‍💻", "games🎮"],
   technologies: {
     frontEnd: {
-      js: ["react", "nextjs", "gatsby"],
+      js: ["react", "nextjs", "gatsby", "redux"],
       css: ["FramerMotion", "sass", "materialUI", "bootstrap"],
     },
     backEnd: {
@@ -43,10 +43,10 @@ let simranjeet = {
       python: ["django", "flask"],
     },
     mobileApp: ["react-native"],
-    devOps: ["Git", "Docker🐳"],
+    devOps: ["Git", "Docker🐳", "Postman", "AWS"],
     databases: ["mongo", "MySql", "sqlite"],
-    software: ["Unity", "Blender", "VsCode", "Photoshop"],
-    misc: ["firebase", "data-science", "web-scraping", "open-cv", "pygame"],
+    software: ["VsCode", "Unity", "Blender", "Photoshop"],
+    misc: ["firebase", "data-science", "web-scraping", "open-cv", "web sockets"],
   },
   architecture: ["Progressive web applications", "Single page applications"],
   currentFocus: "Comptetive Programming using C++",
