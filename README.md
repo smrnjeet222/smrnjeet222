@@ -34,17 +34,17 @@ const simranjeet = {
   code: ["Typescript", "Python🐍", "C/C++"],
   askMeAbout: ["web-dev", "programming", "tech", "hardware👨‍💻", "games🎮"],
   technologies: {
+    dataScience: ["numpy", "pandas", "sciKit-learn", "matplotlib", "scrapy"],
     frontEnd: {
-      js: ["react", "vue", "nextjs 🖤", "redux", "three.js", "greensock"],
-      css: ["tailwind 💚", "framerMotion", "materialUI"],
+      js: ["react", "vue", "nextjs🖤", "redux", "three.js", "greensock"],
+      css: ["tailwind💚", "framerMotion", "materialUI"],
     },
     backEnd: {
       js: ["node", "express", "graphQL", "socket.io"],
       python: ["django", "flask"],
+      databases: ["mongo", "mySql", "fauna", "redis"],
     },
-    dataScience: ["numpy", "pandas", "sciKit-learn", "matplotlib", "scrapy"],
     mobileApp: ["react-native"],
-    databases: ["mongo", "mySql", "fauna", "redis"],
     software: ["vsCode", "unity", "blender", "photoshop"],
     devOps: ["git", "docker", "postman", "webpack", "jest"],
     misc: ["automation", "pygame", "firebase", "web-scraping", "open-cv"],
