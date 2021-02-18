@@ -32,24 +32,26 @@ npx smrnjeet
 let simranjeet = {
   pronouns: "He" | "Him",
   code: ["Typescript", "Python🐍", "C/C++"],
-  askMeAbout: ["web dev", "tech", "hardware👨‍💻", "games🎮"],
+  askMeAbout: ["web-dev", "programming", "tech", "hardware👨‍💻", "games🎮"],
   technologies: {
     frontEnd: {
-      js: ["react", "nextjs", "gatsby", "redux"],
-      css: ["FramerMotion", "sass", "materialUI", "bootstrap"],
+      js: ["react", "vue", "nextjs 🖤", "redux", "three.js", "greensock"],
+      css: ["tailwind 💚", "framerMotion", "materialUI"],
     },
     backEnd: {
-      js: ["node", "express"],
+      js: ["node", "express", "serverless fn", "socket.io],
       python: ["django", "flask"],
     },
+    dataScience: ["numpy", "pandas", "sciKit-learn", "matplotlib", "scrapy"],
     mobileApp: ["react-native"],
-    devOps: ["Git", "Docker🐳", "Postman", "AWS"],
-    databases: ["mongo", "MySql", "sqlite"],
-    software: ["VsCode", "Unity", "Blender", "Photoshop"],
-    misc: ["firebase", "data-science", "web-scraping", "open-cv", "web sockets"],
+    databases: ["mongo", "mySql", "fauna", "redis"],
+    software: ["vsCode", "unity", "blender", "photoshop"],
+    devOps: ["git", "docker", "postman", "webpack", "jest"],
+    misc: ["automation", "pygame", "firebase", "web-scraping", "open-cv", "web-sockets"],
   },
-  architecture: ["Progressive web applications", "Single page applications"],
-  currentFocus: "Comptetive Programming using C++",
+  architecture: ["Progressive web applications", "SSR + SSG"],
+  recentInterests: ["WebAssembly", "Rust"]
+  currentFocus: "Keep Learning...",
   funFact:
     "In order to understand recursion, one must first understand recursion",
 };
