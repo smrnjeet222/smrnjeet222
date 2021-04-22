@@ -36,7 +36,7 @@ const simranjeet = {
   technologies: {
     dataScience: ["numpy", "pandas", "sciKit-learn", "matplotlib", "scrapy"],
     frontEnd: {
-      js: ["react", "vue", "nextjs🖤", "redux", "three.js", "greensock"],
+      js: ["react", "vue", "svelte", "nextjs🖤", "redux", "three.js", "greensock"],
       css: ["tailwind💚", "framerMotion", "materialUI"],
     },
     backEnd: {
