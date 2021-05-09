@@ -57,22 +57,9 @@ const simranjeet = {
 };
 ```
 
-**Languages and Tools:**
-
-<code><img height="20px" width="20px"  src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/python.png" title="Python"></code>
-<code><img height="20px" width="20px"  src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/django.png" title="Django"></code>
-<code><img height="20px" width="20px"  src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/react.png" title="React"></code>
-<code><img height="20px" width="20px"  src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/javascript.png" title="Javascript"></code>
-<code><img height="20px" width="20px"  src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/go.png" title="GoLang"></code>
-<code><img height="20px" width="20px"  src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/sass.png" title="SASS"></code>
-<code><img height="20px" width="20px"  src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/git.png" title="Git"></code>
-<code><img height="20px" width="20px"  src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/cplusplus.png" title="C++"></code>
-<code><img height="20px" width="20px"  src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/unity.svg" title="UnityEngine"></code>
-<code><img height="20px" width="20px"  src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/blender.png" title="Blender"></code>
-<code><img height="20px" width="20px"  src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/vscode.png" title="VsCode"></code>
-<code><img height="20px" width="20px"  src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/pygame.png" title="Pygame"></code>
-<code><img height="20px" width="20px"  src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/mysql.svg" title="Databases">
-</code>
-&nbsp;&nbsp;![](https://visitor-badge.glitch.me/badge?page_id=smrnjeet222.smrnjeet222)
-
 <br />
+
+<p align="center">
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=smrnjeet222&show_icons=true&theme=tokyonight" />
+  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=smrnjeet222&theme=tokyonight" />
+</p>
