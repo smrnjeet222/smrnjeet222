@@ -6,16 +6,16 @@
   <img align="left" alt="website" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/logo.png" />
 </a>
 <a href="https://twitter.com/smrnjeet222">
-  <img align="left" alt="Twitter" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/twitter.png" />
+  <img align="left" alt="Twitter" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/icons/twitter.png" />
 </a>
 <a href="https://www.instagram.com/smrnjeet_22/">
-  <img align="left" alt="itch.io" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/instagram.png" />
+  <img align="left" alt="itch.io" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/icons/instagram.png" />
 </a>
 <a href="https://www.reddit.com/user/smrnjeet_22">
   <img align="left" alt="reddit" width="21px" src="https://www.flaticon.com/svg/static/icons/svg/2111/2111589.svg" />
 </a>
 <a href="https://leetcode.com/smrnjeet222/">
-  <img align="left" alt="leetCode" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/leetcode.png" />
+  <img align="left" alt="leetCode" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/icons/leetcode.png" />
 </a>
 <br />
 <br />
