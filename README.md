@@ -18,14 +18,6 @@
   <img align="left" alt="leetCode" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/icons/leetcode.png" />
 </a>
 <br />
-<br />
-
-👇 Hit in your console or terminal to connect with me.
-
-```bash
-npx smrnjeet
-```
-
 
 ### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...
 ```javascript
@@ -60,6 +52,6 @@ const simranjeet = {
 <br />
 
 <p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=smrnjeet222&show_icons=true&theme=tokyonight" />
-  <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=smrnjeet222&theme=tokyonight" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=smrnjeet222&show_icons=true&theme=tokyonight&hide_border=true&bg_color=22272E" />
+  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com?user=smrnjeet222&theme=tokyonight_duo&hide_border=true&background=22272E&stroke=74859C" />
 </p>
