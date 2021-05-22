@@ -23,26 +23,26 @@
 ```javascript
 const simranjeet = {
   pronouns: "He" | "Him",
-  code: ["Typescript", "Python🐍", "C/C++"],
+  code: ["Typescript", "Python🐍", "C/C++", "Solidity"],
   askMeAbout: ["web-dev", "programming", "tech", "hardware👨‍💻", "games🎮"],
   technologies: {
     dataScience: ["numpy", "pandas", "sciKit-learn", "matplotlib", "scrapy"],
     frontEnd: {
-      js: ["react", "vue", "svelte", "nextjs🖤", "redux", "three.js", "greensock"],
-      css: ["tailwind💚", "framerMotion", "materialUI"],
+      js: ["react", "svelte", "nextjs🖤", "gatsby", "graphQL", "redux" ],
+      css: ["tailwind💚", "chakraUI", "framerMotion", "materialUI"],
     },
     backEnd: {
-      js: ["node", "express", "graphQL", "socket.io"],
+      js: ["node", "express", "graphQL", "firebase", "socket.io"],
       python: ["django", "flask"],
       databases: ["mongo", "mySql", "fauna", "redis"],
     },
     mobileApp: ["react-native"],
     software: ["vsCode", "unity", "blender", "photoshop"],
-    devOps: ["git", "docker", "postman", "webpack", "jest"],
-    misc: ["automation", "pygame", "firebase", "web-scraping", "open-cv"],
+    devOps: ["git", "docker", "puppeteer", "webpack", "jest"],
+    misc: ["tensorflow", "open-cv", "pygame", "web-scraping"],
   },
   architecture: ["Progressive web applications", "Microservices", "SSR + SSG"],
-  recentInterests: ["WebAssembly", "Rust"],
+  recentInterests: ["WebAssembly", "Rust", "Blockchain" ],
   currentFocus: "Keep Learning...",
   funFact:
     "In order to understand recursion, one must first understand recursion",
