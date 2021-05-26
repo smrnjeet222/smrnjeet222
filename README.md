@@ -26,7 +26,6 @@ const simranjeet = {
   code: ["Typescript", "Python🐍", "C/C++", "Solidity"],
   askMeAbout: ["web-dev", "programming", "tech", "hardware👨‍💻", "games🎮"],
   technologies: {
-    dataScience: ["numpy", "pandas", "sciKit-learn", "matplotlib", "scrapy"],
     frontEnd: {
       js: ["react", "svelte", "nextjs🖤", "gatsby", "graphQL", "redux" ],
       css: ["tailwind💚", "chakraUI", "framerMotion", "materialUI"],
