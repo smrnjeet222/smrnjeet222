@@ -23,12 +23,12 @@
 ```javascript
 const simranjeet = {
   pronouns: "He" | "Him",
-  code: ["Typescript", "Python🐍", "C/C++", "Solidity"],
-  askMeAbout: ["web-dev", "programming", "tech", "hardware👨‍💻", "games🎮"],
+  code: ["Typescript", "Python🐍", "Rust🦀", "Solidity"],
+  askMeAbout: ["web-dev", "keebs ⌨", "tech 💻", "crypto 📈", "games 🎮"],
   technologies: {
     frontEnd: {
       js: ["react", "svelte", "nextjs🖤", "gatsby", "graphQL", "redux" ],
-      css: ["tailwind💚", "chakraUI", "framerMotion", "materialUI"],
+      css: ["tailwind", "chakraUI", "framerMotion", "materialUI"],
     },
     backEnd: {
       js: ["node", "express", "graphQL", "firebase", "socket.io"],
@@ -36,12 +36,11 @@ const simranjeet = {
       databases: ["mongo", "mySql", "fauna", "redis"],
     },
     mobileApp: ["react-native"],
-    software: ["vsCode", "unity", "blender", "photoshop"],
-    devOps: ["git", "docker", "puppeteer", "webpack", "jest"],
-    misc: ["tensorflow", "open-cv", "pygame", "web-scraping"],
+    software: ["vs-code", "unity", "blender", "photoshop"],
+    devOps: ["git", "docker", "puppeteer", "jest"],
+    misc: ["automation", "open-cv", "web-scraping"],
   },
-  architecture: ["Progressive web applications", "Microservices", "SSR + SSG"],
-  recentInterests: ["WebAssembly", "Rust", "Blockchain" ],
+  recentInterests: ["blockchain", "game-dev"],
   currentFocus: "Keep Learning...",
   funFact:
     "In order to understand recursion, one must first understand recursion",
