@@ -3,7 +3,7 @@
 <img align="right" width="250px" height="500px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/me.svg">
 
 <a href="https://smrnjeet222.github.io/">
-  <img align="left" alt="website" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/logo.png" />
+  <img align="left" alt="website" width="28px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/logo.png" />
 </a>
 <a href="https://twitter.com/smrnjeet222">
   <img align="left" alt="Twitter" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/icons/twitter.png" />
@@ -12,7 +12,7 @@
   <img align="left" alt="itch.io" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/icons/instagram.png" />
 </a>
 <a href="https://www.reddit.com/user/smrnjeet_22">
-  <img align="left" alt="reddit" width="21px" src="https://www.flaticon.com/svg/static/icons/svg/2111/2111589.svg" />
+  <img align="left" alt="reddit" width="18px" src="https://www.flaticon.com/svg/static/icons/svg/2111/2111589.svg" />
 </a>
 <a href="https://leetcode.com/smrnjeet222/">
   <img align="left" alt="leetCode" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/icons/leetcode.png" />
@@ -24,23 +24,23 @@
 const simranjeet = {
   pronouns: "He" | "Him",
   code: ["Typescript", "Python🐍", "Rust🦀", "Solidity"],
-  askMeAbout: ["web-dev", "keebs ⌨", "tech 💻", "crypto 📈", "games 🎮"],
+  askMeAbout: ["web", "keebs ⌨", "tech 💻", "crypto 📈", "games 🎮"],
   technologies: {
     frontEnd: {
       js: ["react", "svelte", "nextjs🖤", "gatsby", "graphQL", "redux" ],
-      css: ["tailwind", "chakraUI", "framerMotion", "materialUI"],
+      css: ["figma", "tailwind", "chakraUI", "materialUI"],
     },
+    blockchain: ["ethereum", "solana"],
     backEnd: {
-      js: ["node", "express", "graphQL", "firebase", "socket.io"],
+      js: ["nodejs", "express", "firebase", "socket.io"],
       python: ["django", "flask"],
-      databases: ["mongo", "mySql", "fauna", "redis"],
+      databases: ["mongoDB", "mySql", "fauna", "redis"],
     },
     mobileApp: ["react-native"],
     software: ["vs-code", "unity", "blender", "photoshop"],
-    devOps: ["git", "docker", "puppeteer", "jest"],
+    devOps: ["git", "docker", "linux", "puppeteer", "selenium"],
     misc: ["automation", "open-cv", "web-scraping"],
   },
-  recentInterests: ["blockchain", "game-dev"],
   currentFocus: "Keep Learning...",
   funFact:
     "In order to understand recursion, one must first understand recursion",
