@@ -1,11 +1,11 @@
-### Hi there, I'm [Simranjeet!](https://smrnjeet222.github.io/) <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="25px" />
+### Hi there, I'm [Simranjeet!](https://smrnjeet222.github.io/) <img width="25px" height="25px" src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif"  />
 
 <img align="right" width="250px" height="500px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/me.svg">
 
 <a href="https://smrnjeet222.github.io/">
   <img align="left" alt="website" width="28px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/logo.png" />
 </a>
-<a href="https://twitter.com/smrnjeet222">
+<a href="https://twitter.com/smrnjeet_22">
   <img align="left" alt="Twitter" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/icons/twitter.png" />
 </a>
 <a href="https://www.instagram.com/smrnjeet_22/">
