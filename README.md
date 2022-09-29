@@ -20,16 +20,19 @@
 ```javascript
 const simranjeet = {
   pronouns: "He" | "Him",
-  code: ["Typescript", "Python🐍", "Rust🦀", "Solidity"],
+  code: ["Typescript", "Solidity", "Rust🦀", "Python🐍"],
   askMeAbout: ["web", "keebs ⌨", "tech 💻", "crypto 📈", "games 🎮"],
   technologies: {
+    web3: {
+      ethereum: ["solidity", "hardhat", "etherjs", "subgraph"],
+      solana: ["anchor", "candy-machine", "solana-cli", "web3-sdk"],
+    },
     frontEnd: {
-      js: ["react", "svelte", "nextjs🖤", "gatsby", "graphQL", "redux" ],
+      js: ["react", "svelte", "nextjs🖤", "graphQL", "redux" ],
       css: ["figma", "tailwind", "chakraUI", "materialUI"],
     },
-    blockchain: ["ethereum", "solana"],
     backEnd: {
-      js: ["nodejs", "express", "firebase", "socket.io"],
+      js: ["nodejs", "express", "firebase", "hasura"],
       python: ["django", "flask"],
       databases: ["mongoDB", "mySql", "fauna", "redis"],
     },
