@@ -8,8 +8,8 @@
 <a href="https://twitter.com/smrnjeet_22">
   <img align="left" alt="Twitter" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/icons/twitter.png" />
 </a>
-<a href="https://www.instagram.com/smrnjeet_22/">
-  <img align="left" alt="itch.io" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/icons/instagram.png" />
+<a href="mailto:smrnjeet.dev@gmail.com">
+  <img align="left" alt="itch.io" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/icons/resume.png" />
 </a>
 <a href="https://leetcode.com/smrnjeet222/">
   <img align="left" alt="leetCode" width="21px" src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/icons/leetcode.png" />
@@ -20,24 +20,24 @@
 ```javascript
 const simranjeet = {
   pronouns: "He" | "Him",
-  code: ["Typescript", "Solidity", "Rust🦀", "Python🐍"],
-  askMeAbout: ["web", "keebs ⌨", "tech 💻", "crypto 📈", "games 🎮"],
+  code: ["React", "Typescript 🎓", "Solidity", "Rust 🦀"],
+  askMeAbout: ["web 🌐", "tech 💻", "crypto 📈", "games 🎮", "movies 🍿"],
   technologies: {
     web3: {
-      ethereum: ["solidity", "hardhat", "etherjs", "subgraph"],
-      solana: ["anchor", "candy-machine", "solana-cli", "web3-sdk"],
+      ethereum: ["solidity", "hardhat", "etherjs", "subgraphs", ...],
+      solana: [ "web3-sdk", "anchor", "candy-machine", "solana-cli", ...],
     },
     frontEnd: {
-      js: ["react", "svelte", "nextjs🖤", "graphQL", "redux" ],
-      css: ["figma", "tailwind", "chakraUI", "materialUI"],
+      js: ["nextjs", "svelte", "solidjs", "astro", "three.js", ... ],
+      css: ["tailwind", "chakraUI", "materialUI", ... ],
     },
     backEnd: {
-      js: ["nodejs", "express", "firebase", "hasura"],
+      js: ["nodejs", "express", "sequelize", "tRPC", "firebase", "supabase", ...],
       python: ["django", "flask"],
-      databases: ["mongoDB", "mySql", "fauna", "redis"],
+      databases: ["postgreSQL", "SQL", "redis", "mongoDB", ...],
     },
-    mobileApp: ["react-native"],
-    software: ["vs-code", "unity", "blender", "photoshop"],
+    mobileApp: ["react-native 📱"],
+    software: ["unity", "blender", "photoshop"],
     devOps: ["git", "docker", "linux", "puppeteer", "selenium"],
     misc: ["automation", "open-cv", "web-scraping"],
   },
