@@ -19,32 +19,33 @@
 ### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...
 ```javascript
 const simranjeet = {
-  pronouns: "He" | "Him",
-  code: ["React", "Typescript 🎓", "Solidity", "Rust 🦀"],
-  askMeAbout: ["web 🌐", "tech 💻", "crypto 📈", "games 🎮", "movies 🍿"],
-  technologies: {
-    web3: {
-      ethereum: ["solidity", "hardhat", "etherjs", "subgraphs", ...],
-      solana: [ "web3-sdk", "anchor", "candy-machine", "solana-cli", ...],
+  "pronouns": "He | Him",
+  "code": ["React", "Typescript 🎓", "Solidity", "Go", "Rust 🦀"],
+  "askMeAbout": ["web 🌐", "tech 💻", "crypto 📈", "games 🎮", "movies 🍿"],
+  "technologies": {
+    "web3": {
+      "ethereum": ["solidity", "hardhat", "ethers.js", "subgraphs", "web3.js", "arweave", "chainlink", "the-graph"],
+      "solana": ["web3-sdk", "anchor", "candy-machine", "solana-cli"],
     },
-    frontEnd: {
-      js: ["nextjs", "svelte", "solidjs", "astro", "three.js", ... ],
-      css: ["tailwind", "chakraUI", "materialUI", ... ],
+    "frontEnd": {
+      "js": ["next.js", "react-native", "vite", "tanstack", "astro", "svelte", "three.js"],
+      "css": ["tailwind", "radix-ui", "mui", "chakra-ui", "mantine", "emotion", "gsap", "framer-motion"]
     },
-    backEnd: {
-      js: ["nodejs", "express", "sequelize", "tRPC", "firebase", "supabase", ...],
-      python: ["django", "flask"],
-      databases: ["postgreSQL", "SQL", "redis", "mongoDB", ...],
+    "backEnd": {
+      "js": ["node.js", "express.js", "nestjs", "fastify", "hono", "supabase"],
+      "go": ["fiber", "gin", "echo", "gorm"],
+      "databases": ["postgresql", "redis", "mongodb", "kafka", "rabbitmq",]
     },
-    mobileApp: ["react-native 📱"],
-    software: ["unity", "blender", "photoshop"],
-    devOps: ["git", "docker", "linux", "puppeteer", "selenium"],
-    misc: ["automation", "open-cv", "web-scraping"],
+    "mobileApp": ["react-native 📱", "expo"],
+    "devOps": {
+      "tools": ["git", "docker", "github-actions", "grafana", "datadog"],
+      "cloud": ["aws (amplify, lambda, s3, ecs, rds)", "cloudflare", "supabase"]
+    },
   },
-  currentFocus: "Keep Learning...",
-  funFact:
-    "In order to understand recursion, one must first understand recursion",
-};
+  "currentFocus": "Keep Learning...",
+  "funFact": "In order to understand recursion, one must first understand recursion"
+}
+
 ```
 
 <br />
