@@ -51,6 +51,5 @@ const simranjeet = {
 <br />
 
 <p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=smrnjeet222&show_icons=true&theme=tokyonight&hide_border=true&bg_color=22272E" />
   <img width="49%" src="https://github-readme-streak-stats.herokuapp.com?user=smrnjeet222&theme=tokyonight_duo&hide_border=true&background=22272E&stroke=74859C" />
 </p>
