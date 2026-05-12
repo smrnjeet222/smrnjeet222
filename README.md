@@ -82,10 +82,10 @@ funFact: "To understand recursion, one must first understand recursion."
 ### 📈 &nbsp; GitHub Stats
 
 <p align="center">
-  <a href="https://github.com/ashutosh00710/github-readme-activity-graph" target="_blank" rel="noreferrer">
-    <img width="50%" style="margin-right:1%;" src="https://github-readme-activity-graph.vercel.app/graph?username=smrnjeet222&theme=github-dark-dimmed&custom_title=Jeet's%20Activity%20Graph&hide_border=true" alt="activity graph" />
-  </a>
-  <img width="45%" style="margin-left:1%;" src="https://github-readme-streak-stats.herokuapp.com?user=smrnjeet222&theme=tokyonight_duo&hide_border=true&background=22272E&stroke=74859C" alt="GitHub streak stats" />
+  <!-- <a href="https://github.com/ashutosh00710/github-readme-activity-graph" target="_blank" rel="noreferrer">
+    <img width="90%" style="margin-right:1%;" src="https://github-readme-activity-graph.vercel.app/graph?username=smrnjeet222&theme=github-dark-dimmed&custom_title=Jeet's%20Activity%20Graph&hide_border=true" alt="activity graph" />
+  </a> -->
+  <img width="90%" style="margin-left:1%;" src="https://github-readme-streak-stats.herokuapp.com?user=smrnjeet222&theme=tokyonight_duo&hide_border=true&background=21282f&stroke=74859C" alt="GitHub streak stats" />
 </p>
 
 
