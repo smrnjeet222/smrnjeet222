@@ -15,7 +15,7 @@
 </div>
 
 ---
-### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little about me... 
+### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="40"> A little about me... 
 
 I'm a fullstack engineer focused on **web3 product infrastructure** from smart contracts and protocol design to backend services, on-chain indexing, and user-facing apps.
 
