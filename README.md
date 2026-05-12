@@ -1,6 +1,14 @@
 <div align="center">
   <!-- <img src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/me.svg" width="180" alt="Simranjeet" /> -->
-  <p style="font-size:2.2rem;font-weight:700;margin:0;">Hey, I'm Simranjeet 👋</p>
+  
+  <div id="toc">
+  <ul style="list-style: none">
+    <summary>
+      <h1>Hey, I'm Simranjeet 👋</h1>
+    </summary>
+  </ul>
+</div>
+
 
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=1CDA23F8&center=true&vCenter=true&width=435&lines=Fullstack+web+and+app+developer;5%2B+years+of+coding;Always+learning+new+things" alt="Typing SVG" /> 
   
