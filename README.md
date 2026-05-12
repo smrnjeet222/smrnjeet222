@@ -61,20 +61,6 @@ const simranjeet = {
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/-GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
----
-
-### 🚀 Notable Projects
-
-| Project | Stack | Links |
-|---|---|---|
-| **Three.js Minecraft** | React, Three.js, react-three-fiber | [Demo](https://threejs-minecraft.netlify.app) |
-| **PokeTrade** — NFT marketplace | Solidity, ethers.js, ERC721/1155 | [Code](https://github.com/smrnjeet222/PokeTrade) |
-| **Chatter Box** — open-room chat | React, Supabase, Tailwind | [Demo](https://chattter-box.netlify.app) |
-| **Raffle Lottery Contract** | Solidity, Chainlink VRF | [Code](https://github.com/smrnjeet222/raffle-lottery-contract) |
-| **3D Shaders & Demos** | Three.js, GLSL, react-three-fiber | [Rocket](https://threejs-rocket.netlify.app) · [Dice](https://threejs-dice-roller.netlify.app) |
-| **BGV / e-sign Dashboards** | React, TypeScript, Redux | [BGV](https://bgv-demo.netlify.app) · [eSign](https://esign-demo.netlify.app) |
-
----
 
 ### 📈 GitHub Stats
 
