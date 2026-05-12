@@ -1,9 +1,8 @@
 <div align="center">
   <!-- <img src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/me.svg" width="180" alt="Simranjeet" /> -->
-  <h1>Hey, I'm Simranjeet 👋</h1>
-  <!-- <p><b>Senior Software Engineer · Web3 · Fullstack · DeFi & Protocol Systems</b></p> -->
-  <p align="center">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=1CDA23F8&center=true&vCenter=true&width=435&lines=Fullstack+web+and+app+developer;5%2B+years+of+coding;Always+learning+new+things" alt="Typing SVG" />  </p>
+  <p style="font-size:2.2rem;font-weight:700;margin:0;">Hey, I'm Simranjeet 👋</p>
+
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=1CDA23F8&center=true&vCenter=true&width=435&lines=Fullstack+web+and+app+developer;5%2B+years+of+coding;Always+learning+new+things" alt="Typing SVG" /> 
   
   <p>
     <a href="https://jeet22.xyz" target="_blank"><img src="https://img.shields.io/badge/Portfolio-jeet22.xyz-01696f?style=flat-square&logo=safari&logoColor=white" /></a>
@@ -14,8 +13,7 @@
   </p>
 </div>
 
----
-### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="40"> A little about me... 
+### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="40">&nbsp; A little about me... 
 
 I'm a fullstack engineer focused on **web3 product infrastructure** from smart contracts and protocol design to backend services, on-chain indexing, and user-facing apps.
 
@@ -38,7 +36,7 @@ funFact: "To understand recursion, one must first understand recursion."
 
 ---
 
-### 🛠️ Tech Stack
+### 🛠️ &nbsp; Tech Stack
 
 ![Core Languages](https://img.shields.io/badge/-Core%20Languages-2f80ed?style=for-the-badge&logoColor=white) ••• ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white&height=14)
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white&height=14)
@@ -71,8 +69,9 @@ funFact: "To understand recursion, one must first understand recursion."
 ![Terraform](https://img.shields.io/badge/-Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white&height=14)
 ![GitHub Actions](https://img.shields.io/badge/-GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white&height=14)
 
+---
 
-### 📈 GitHub Stats
+### 📈 &nbsp; GitHub Stats
 
 <p align="center">
   <a href="https://github.com/ashutosh00710/github-readme-activity-graph" target="_blank" rel="noreferrer">
@@ -81,7 +80,7 @@ funFact: "To understand recursion, one must first understand recursion."
   <img width="45%" style="margin-left:1%;" src="https://github-readme-streak-stats.herokuapp.com?user=smrnjeet222&theme=tokyonight_duo&hide_border=true&background=22272E&stroke=74859C" alt="GitHub streak stats" />
 </p>
 
----
+
 
 <div align="center">
   <sub>Open to interesting problems · <a href="mailto:smrnjeet.dev@gmail.com">smrnjeet.dev@gmail.com</a></sub>
