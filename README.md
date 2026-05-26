@@ -1,22 +1,27 @@
 <div align="center">
   <!-- <img src="https://raw.githubusercontent.com/smrnjeet222/smrnjeet222/master/assets/me.svg" width="180" alt="Simranjeet" /> -->
-  
-  <div id="toc">
-  <ul style="list-style: none">
+  <div>
+  <!-- <ul style="list-style: none;"> -->
     <summary>
       <h1>Hey, I'm Simranjeet 👋</h1>
     </summary>
-  </ul>
+  <!-- </ul> -->
 </div>
 
-
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=1CDA23F8&center=true&vCenter=true&width=435&lines=Fullstack+web+and+app+developer;5%2B+years+of+coding;Always+learning+new+things" alt="Typing SVG" /> 
+
   
+[![GitHub Followers](https://www.shieldcn.dev/github/followers/smrnjeet222.svg?variant=secondary&size=xs)](https://github.com/smrnjeet222?tab=followers) [![GitHub Stars](https://www.shieldcn.dev/github/user-stars/smrnjeet222.svg?variant=secondary&size=xs)](https://github.com/smrnjeet222?tab=repositories) 
+
+  [![GitHub](https://www.shieldcn.dev/badge/GitHub-%40smrnjeet222-181717.svg?logo=github&variant=branded&size=xs)](https://github.com/smrnjeet222) [![X Follow](https://www.shieldcn.dev/x/follow/smrnjeet_22.svg?variant=branded&size=xs)](https://x.com/smrnjeet_22) [![Website](https://www.shieldcn.dev/badge/Website-jeet22.xyz-181717.svg?logo=ri%3ALuLink&variant=branded&size=xs)](https://jeet22.xyz) [![LinkedIn](https://www.shieldcn.dev/badge/LinkedIn-%40smrnjeet222-0A66C2.svg?logo=linkedin&variant=branded&size=xs)](https://linkedin.com/in/smrnjeet222)
+
+
+
   <p>
-    <a href="https://jeet22.xyz" target="_blank"><img src="https://img.shields.io/badge/Portfolio-jeet22.xyz-01696f?style=flat-square&logo=safari&logoColor=white" /></a>
+    <!-- <a href="https://jeet22.xyz" target="_blank"><img src="https://img.shields.io/badge/Portfolio-jeet22.xyz-01696f?style=flat-square&logo=safari&logoColor=white" /></a>
     <a href="https://linkedin.com/in/smrnjeet222" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-smrnjeet222-0A66C2?style=flat-square&logo=linkedin&logoColor=white" /></a>
     <a href="https://twitter.com/smrnjeet_22" target="_blank"><img src="https://img.shields.io/badge/Twitter-@smrnjeet__22-1DA1F2?style=flat-square&logo=twitter&logoColor=white" /></a>
-    <a href="mailto:smrnjeet.dev@gmail.com"><img src="https://img.shields.io/badge/Email-smrnjeet.dev@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" /></a>
+    <a href="mailto:smrnjeet.dev@gmail.com"><img src="https://img.shields.io/badge/Email-smrnjeet.dev@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" /></a> -->
     <!-- <a href="https://leetcode.com/smrnjeet222/" target="_blank"><img src="https://img.shields.io/badge/LeetCode-smrnjeet222-FFA116?style=flat-square&logo=leetcode&logoColor=white" /></a> -->
   </p>
 </div>
