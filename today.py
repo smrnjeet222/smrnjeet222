@@ -203,7 +203,8 @@ def loc_query(owner_affiliation, comment_size=0, force_cache=False, cursor=None,
     variables = {"owner_affiliation": owner_affiliation, "login": USER_NAME, "cursor": cursor}
     request = simple_request(loc_query.__name__, query, variables)
     page = request.json()["data"]["user"]["repositories"]
-    edges = edges + page["edges"]
+    # GraphQL can return null nodes (deleted / inaccessible repos)
+    edges = edges + [e for e in page["edges"] if e and e.get("node")]
     if page["pageInfo"]["hasNextPage"]:
         return loc_query(
             owner_affiliation,
@@ -274,9 +275,12 @@ def flush_cache(edges, filename, comment_size):
         data = f.readlines()[:comment_size] if comment_size > 0 else []
     with open(filename, "w") as f:
         f.writelines(data)
-        for node in edges:
+        for edge in edges:
+            node = edge.get("node") if edge else None
+            if not node:
+                continue
             f.write(
-                hashlib.sha256(node["node"]["nameWithOwner"].encode("utf-8")).hexdigest()
+                hashlib.sha256(node["nameWithOwner"].encode("utf-8")).hexdigest()
                 + " 0 0 0 0\n"
             )
 
@@ -290,7 +294,11 @@ def force_close_file(data, cache_comment):
 
 
 def stars_counter(data):
-    return sum(node["node"]["stargazers"]["totalCount"] for node in data)
+    return sum(
+        node["node"]["stargazers"]["totalCount"]
+        for node in data
+        if node and node.get("node")
+    )
 
 
 def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib_data, follower_data, loc_data):
