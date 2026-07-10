@@ -49,16 +49,103 @@ def format_plural(unit):
     return "s" if unit != 1 else ""
 
 
+# Transient GitHub / edge failures worth retrying
+_RETRY_STATUS = {429, 500, 502, 503, 504}
+_MAX_RETRIES = 6
+_BASE_DELAY_S = 2.0
+
+
+def _retry_delay(attempt: int, response=None) -> float:
+    """Exponential backoff; honor Retry-After on 429 when present."""
+    delay = _BASE_DELAY_S * (2 ** (attempt - 1))
+    if response is not None and response.status_code == 429:
+        retry_after = response.headers.get("Retry-After")
+        if retry_after:
+            try:
+                delay = max(delay, float(retry_after))
+            except ValueError:
+                pass
+    # cap so a single call can't sleep forever
+    return min(delay, 60.0)
+
+
+def post_graphql(func_name, query, variables):
+    """
+    POST to GitHub GraphQL with retries on transient errors.
+    Returns the final Response (may be non-200 after retries exhausted).
+    """
+    last_error = None
+    for attempt in range(1, _MAX_RETRIES + 1):
+        try:
+            response = requests.post(
+                "https://api.github.com/graphql",
+                json={"query": query, "variables": variables},
+                headers=HEADERS,
+                timeout=60,
+            )
+        except requests.RequestException as exc:
+            last_error = exc
+            if attempt == _MAX_RETRIES:
+                raise Exception(
+                    func_name,
+                    " network failure after",
+                    _MAX_RETRIES,
+                    "retries:",
+                    exc,
+                    QUERY_COUNT,
+                ) from exc
+            delay = _retry_delay(attempt)
+            print(
+                f"  {func_name}: network error ({exc}); "
+                f"retry {attempt}/{_MAX_RETRIES} in {delay:.0f}s",
+                flush=True,
+            )
+            time.sleep(delay)
+            continue
+
+        if response.status_code == 200:
+            return response
+
+        retryable = response.status_code in _RETRY_STATUS
+        if not retryable or attempt == _MAX_RETRIES:
+            return response
+
+        delay = _retry_delay(attempt, response)
+        body_preview = (response.text or "")[:120].replace("\n", " ")
+        print(
+            f"  {func_name}: HTTP {response.status_code} ({body_preview}); "
+            f"retry {attempt}/{_MAX_RETRIES} in {delay:.0f}s",
+            flush=True,
+        )
+        time.sleep(delay)
+
+    # unreachable, but keeps type-checkers happy
+    raise Exception(func_name, " exhausted retries", last_error, QUERY_COUNT)
+
+
 def simple_request(func_name, query, variables):
-    request = requests.post(
-        "https://api.github.com/graphql",
-        json={"query": query, "variables": variables},
-        headers=HEADERS,
-        timeout=60,
-    )
-    if request.status_code == 200:
-        return request
-    raise Exception(func_name, " has failed with a", request.status_code, request.text, QUERY_COUNT)
+    request = post_graphql(func_name, query, variables)
+    if request.status_code != 200:
+        raise Exception(
+            func_name,
+            " has failed with a",
+            request.status_code,
+            (request.text or "")[:500],
+            QUERY_COUNT,
+        )
+    try:
+        payload = request.json()
+    except ValueError as exc:
+        raise Exception(func_name, " returned non-JSON body", QUERY_COUNT) from exc
+    # HTTP 200 can still be a GraphQL failure (data: null + errors)
+    if payload.get("data") is None and payload.get("errors"):
+        raise Exception(
+            func_name,
+            " GraphQL error:",
+            payload["errors"],
+            QUERY_COUNT,
+        )
+    return request
 
 
 def graph_repos_stars(count_type, owner_affiliation, cursor=None):
@@ -125,14 +212,13 @@ def recursive_loc(
         }
     }"""
     variables = {"repo_name": repo_name, "owner": owner, "cursor": cursor}
-    request = requests.post(
-        "https://api.github.com/graphql",
-        json={"query": query, "variables": variables},
-        headers=HEADERS,
-        timeout=60,
-    )
+    request = post_graphql(recursive_loc.__name__, query, variables)
     if request.status_code == 200:
-        ref = request.json()["data"]["repository"]["defaultBranchRef"]
+        payload = request.json()
+        repo = (payload.get("data") or {}).get("repository")
+        if repo is None:
+            return 0
+        ref = repo.get("defaultBranchRef")
         if ref is not None:
             return loc_counter_one_repo(
                 owner,
@@ -148,7 +234,12 @@ def recursive_loc(
     force_close_file(data, cache_comment)
     if request.status_code == 403:
         raise Exception("Too many requests — hit GitHub anti-abuse / rate limit")
-    raise Exception("recursive_loc() failed with", request.status_code, request.text, QUERY_COUNT)
+    raise Exception(
+        "recursive_loc() failed with",
+        request.status_code,
+        (request.text or "")[:500],
+        QUERY_COUNT,
+    )
 
 
 def loc_counter_one_repo(
