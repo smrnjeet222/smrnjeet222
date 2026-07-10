@@ -12,7 +12,7 @@ text, tspan {
 .delColor {fill: #cf222e;}
 .cc {fill: #8c959f;}
 </style>
-<rect width="985px" height="530px" fill="#f6f8fa" rx="15"/>
+<rect width="985px" height="530px" fill="#ffffff" rx="15"/>
 <text x="12" y="16" fill="#24292f" class="ascii" font-size="7.5px">
 <tspan x="12" y="16.0">                                     .. ...                           </tspan>
 <tspan x="12" y="24.7">                                 ...:-----::::.                       </tspan>
