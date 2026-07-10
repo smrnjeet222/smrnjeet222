@@ -5,7 +5,15 @@ Env:
   ACCESS_TOKEN  — GitHub PAT (required)
   USER_NAME     — GitHub login (default: smrnjeet222)
   BIRTHDAY      — YYYY-MM-DD (default: 1999-11-03)
+
+CLI:
+  python today.py           # merge: update visible repos, preserve rest (Actions-safe)
+  python today.py --seed    # local: re-walk every repo the token can see; still never
+                            # deletes cache rows for repos the token cannot see (orgs)
 """
+from __future__ import annotations
+
+import argparse
 import datetime
 import hashlib
 import os
@@ -178,13 +186,12 @@ def graph_repos_stars(count_type, owner_affiliation, cursor=None):
 def recursive_loc(
     owner,
     repo_name,
-    data,
-    cache_comment,
     addition_total=0,
     deletion_total=0,
     my_commits=0,
     cursor=None,
 ):
+    """Walk commit history for one repo. Raises LocFetchError on hard API failure."""
     query_count("recursive_loc")
     query = """
     query ($repo_name: String!, $owner: String!, $cursor: String) {
@@ -217,36 +224,32 @@ def recursive_loc(
         payload = request.json()
         repo = (payload.get("data") or {}).get("repository")
         if repo is None:
-            return 0
+            raise LocFetchError(f"{owner}/{repo_name}: repository null in GraphQL", fatal=False)
         ref = repo.get("defaultBranchRef")
-        if ref is not None:
-            return loc_counter_one_repo(
-                owner,
-                repo_name,
-                data,
-                cache_comment,
-                ref["target"]["history"],
-                addition_total,
-                deletion_total,
-                my_commits,
-            )
-        return 0
-    force_close_file(data, cache_comment)
-    if request.status_code == 403:
-        raise Exception("Too many requests — hit GitHub anti-abuse / rate limit")
-    raise Exception(
-        "recursive_loc() failed with",
-        request.status_code,
-        (request.text or "")[:500],
-        QUERY_COUNT,
+        if ref is None:
+            return 0, 0, 0
+        return loc_counter_one_repo(
+            owner,
+            repo_name,
+            ref["target"]["history"],
+            addition_total,
+            deletion_total,
+            my_commits,
+        )
+    fatal = request.status_code == 403
+    raise LocFetchError(
+        f"{owner}/{repo_name}: HTTP {request.status_code}",
+        fatal=fatal,
     )
 
 
 def loc_counter_one_repo(
-    owner, repo_name, data, cache_comment, history, addition_total, deletion_total, my_commits
+    owner, repo_name, history, addition_total, deletion_total, my_commits
 ):
     for node in history["edges"]:
-        if node["node"]["author"]["user"] == OWNER_ID:
+        author = (node.get("node") or {}).get("author") or {}
+        user = author.get("user")
+        if user == OWNER_ID:
             my_commits += 1
             addition_total += node["node"]["additions"]
             deletion_total += node["node"]["deletions"]
@@ -256,8 +259,6 @@ def loc_counter_one_repo(
     return recursive_loc(
         owner,
         repo_name,
-        data,
-        cache_comment,
         addition_total,
         deletion_total,
         my_commits,
@@ -265,7 +266,7 @@ def loc_counter_one_repo(
     )
 
 
-def loc_query(owner_affiliation, comment_size=0, force_cache=False, cursor=None, edges=None):
+def loc_query(owner_affiliation, comment_size=0, force_refresh=False, cursor=None, edges=None):
     if edges is None:
         edges = []
     query_count("loc_query")
@@ -294,94 +295,246 @@ def loc_query(owner_affiliation, comment_size=0, force_cache=False, cursor=None,
     variables = {"owner_affiliation": owner_affiliation, "login": USER_NAME, "cursor": cursor}
     request = simple_request(loc_query.__name__, query, variables)
     page = request.json()["data"]["user"]["repositories"]
-    # GraphQL can return null nodes (deleted / inaccessible repos)
     edges = edges + [e for e in page["edges"] if e and e.get("node")]
     if page["pageInfo"]["hasNextPage"]:
         return loc_query(
             owner_affiliation,
             comment_size,
-            force_cache,
+            force_refresh,
             page["pageInfo"]["endCursor"],
             edges,
         )
-    return cache_builder(edges, comment_size, force_cache)
+    return cache_builder(edges, force_refresh)
 
 
-def cache_path():
+class LocFetchError(Exception):
+    def __init__(self, message: str, fatal: bool = False):
+        super().__init__(message)
+        self.fatal = fatal
+
+
+def legacy_cache_path() -> Path:
     return CACHE_DIR / (hashlib.sha256(USER_NAME.encode("utf-8")).hexdigest() + ".txt")
 
 
-def cache_builder(edges, comment_size, force_cache, loc_add=0, loc_del=0):
-    cached = True
-    filename = cache_path()
-    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+def repos_cache_dir() -> Path:
+    return CACHE_DIR / "repos"
 
+
+def repo_id_hash(name_with_owner: str) -> str:
+    return hashlib.sha256(name_with_owner.encode("utf-8")).hexdigest()
+
+
+def repo_cache_file(repo_hash: str) -> Path:
+    return repos_cache_dir() / f"{repo_hash}.txt"
+
+
+def parse_repo_cache_text(text: str, fallback_hash: str = "") -> dict | None:
+    """
+    Per-repo file format:
+      line1: owner/name
+      line2: branch_commits my_commits additions deletions
+    """
+    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    if not lines:
+        return None
+    if len(lines) == 1:
+        parts = lines[0].split()
+        if len(parts) >= 5:
+            return {
+                "hash": parts[0],
+                "name": "",
+                "commits": int(parts[1]),
+                "my_commits": int(parts[2]),
+                "additions": int(parts[3]),
+                "deletions": int(parts[4]),
+            }
+        return None
+    name = lines[0]
+    parts = lines[1].split()
+    if len(parts) < 4:
+        return None
+    return {
+        "hash": fallback_hash or repo_id_hash(name),
+        "name": name,
+        "commits": int(parts[0]),
+        "my_commits": int(parts[1]),
+        "additions": int(parts[2]),
+        "deletions": int(parts[3]),
+    }
+
+
+def read_repo_cache(repo_hash: str) -> dict | None:
+    path = repo_cache_file(repo_hash)
+    if not path.is_file():
+        return None
     try:
-        with open(filename, "r") as f:
-            data = f.readlines()
-    except FileNotFoundError:
-        data = []
-        if comment_size > 0:
-            for _ in range(comment_size):
-                data.append("This line is a comment block. Write whatever you want here.\n")
-        with open(filename, "w") as f:
-            f.writelines(data)
+        return parse_repo_cache_text(path.read_text(encoding="utf-8"), repo_hash)
+    except (OSError, ValueError):
+        return None
 
-    if len(data) - comment_size != len(edges) or force_cache:
+
+def write_repo_cache(
+    repo_hash: str,
+    name: str,
+    commits: int,
+    my_commits: int,
+    additions: int,
+    deletions: int,
+) -> None:
+    repos_cache_dir().mkdir(parents=True, exist_ok=True)
+    path = repo_cache_file(repo_hash)
+    path.write_text(
+        f"{name}\n{commits} {my_commits} {additions} {deletions}\n",
+        encoding="utf-8",
+    )
+
+
+def load_all_repo_caches() -> dict[str, dict]:
+    """Load every per-repo cache file. Never deletes files."""
+    migrate_legacy_monolithic_cache()
+    out: dict[str, dict] = {}
+    d = repos_cache_dir()
+    if not d.is_dir():
+        return out
+    for path in sorted(d.glob("*.txt")):
+        h = path.stem
+        entry = read_repo_cache(h)
+        if entry:
+            out[h] = entry
+    return out
+
+
+def migrate_legacy_monolithic_cache() -> None:
+    """One-shot: split old cache/<userhash>.txt into cache/repos/<hash>.txt."""
+    legacy = legacy_cache_path()
+    if not legacy.is_file():
+        return
+    repos_cache_dir().mkdir(parents=True, exist_ok=True)
+    migrated = 0
+    for line in legacy.read_text(encoding="utf-8").splitlines():
+        parts = line.split()
+        if len(parts) < 5:
+            continue
+        h, commits, my_c, add, delete = parts[0], parts[1], parts[2], parts[3], parts[4]
+        dest = repo_cache_file(h)
+        if dest.is_file():
+            continue
+        dest.write_text(
+            f"unknown/{h[:8]}\n{commits} {my_c} {add} {delete}\n",
+            encoding="utf-8",
+        )
+        migrated += 1
+    if migrated:
+        print(
+            f"  cache: migrated {migrated} repos from legacy {legacy.name} → cache/repos/",
+            flush=True,
+        )
+
+
+def cache_builder(edges, force_refresh=False, loc_add=0, loc_del=0):
+    """
+    Per-repo merge cache under cache/repos/<hash>.txt:
+    - Update / create files for repos visible to the token
+    - On API failure: keep existing file unchanged
+    - Never delete a per-repo cache file
+    """
+    by_hash = load_all_repo_caches()
+    preserved_before = len(by_hash)
+    cached = preserved_before > 0 and not force_refresh
+
+    visible = []
+    for edge in edges:
+        node = edge.get("node") if edge else None
+        if not node:
+            continue
+        visible.append(node)
+
+    total_repos = len(visible)
+    print(
+        f"  cache: {preserved_before} repo files, {total_repos} visible to token"
+        f"{' [seed refresh]' if force_refresh else ''}",
+        flush=True,
+    )
+
+    for index, node in enumerate(visible):
+        name = node["nameWithOwner"]
+        h = repo_id_hash(name)
+        prev = by_hash.get(h) or read_repo_cache(h)
+
+        try:
+            total = node["defaultBranchRef"]["target"]["history"]["totalCount"]
+        except (TypeError, KeyError):
+            if prev is None:
+                write_repo_cache(h, name, 0, 0, 0, 0)
+                by_hash[h] = read_repo_cache(h)
+            else:
+                print(f"  keep {name}: no defaultBranchRef; old cache intact", flush=True)
+            continue
+
+        old_commits = prev["commits"] if prev else -1
+        need_walk = force_refresh or prev is None or old_commits != total
+        if not need_walk:
+            continue
+
         cached = False
-        flush_cache(edges, filename, comment_size)
-        with open(filename, "r") as f:
-            data = f.readlines()
+        print(
+            f"  LOC [{index + 1}/{total_repos}] {name} ({total} commits)...",
+            flush=True,
+        )
+        owner, repo_name = name.split("/")
+        try:
+            loc = recursive_loc(owner, repo_name)
+        except LocFetchError as exc:
+            if prev is not None:
+                print(f"  keep {name}: {exc}; old cache intact", flush=True)
+            else:
+                print(f"  skip {name}: {exc}; no prior cache", flush=True)
+            if exc.fatal:
+                print("  stopping further LOC walks (rate limit / fatal)", flush=True)
+                break
+            continue
+        except requests.RequestException as exc:
+            if prev is not None:
+                print(f"  keep {name}: network {exc}; old cache intact", flush=True)
+            else:
+                print(f"  skip {name}: network {exc}; no prior cache", flush=True)
+            continue
 
-    cache_comment = data[:comment_size]
-    data = data[comment_size:]
-    total_repos = len(edges)
-    for index in range(total_repos):
-        name = edges[index]["node"]["nameWithOwner"]
-        repo_hash, commit_count, *_rest = data[index].split()
-        if repo_hash == hashlib.sha256(name.encode("utf-8")).hexdigest():
-            try:
-                total = edges[index]["node"]["defaultBranchRef"]["target"]["history"]["totalCount"]
-                if int(commit_count) != total:
-                    print(f"  LOC [{index + 1}/{total_repos}] {name} ({total} commits)...", flush=True)
-                    owner, repo_name = name.split("/")
-                    loc = recursive_loc(owner, repo_name, data, cache_comment)
-                    data[index] = (
-                        f"{repo_hash} {total} {loc[2]} {loc[0]} {loc[1]}\n"
-                    )
-            except TypeError:
-                data[index] = repo_hash + " 0 0 0 0\n"
-        with open(filename, "w") as f:
-            f.writelines(cache_comment)
-            f.writelines(data)
-    for line in data:
-        loc = line.split()
-        loc_add += int(loc[3])
-        loc_del += int(loc[4])
-    return [loc_add, loc_del, loc_add - loc_del, cached]
+        add_n, del_n, my_n = loc
+        if (
+            my_n == 0
+            and add_n == 0
+            and del_n == 0
+            and prev is not None
+            and prev["my_commits"] > 0
+        ):
+            print(f"  keep {name}: walk returned empty but cache has data", flush=True)
+            continue
+
+        write_repo_cache(h, name, total, my_n, add_n, del_n)
+        by_hash[h] = {
+            "hash": h,
+            "name": name,
+            "commits": total,
+            "my_commits": my_n,
+            "additions": add_n,
+            "deletions": del_n,
+        }
+
+    by_hash = load_all_repo_caches()
+    skipped = len(by_hash) - len({repo_id_hash(n["nameWithOwner"]) for n in visible})
+    if skipped > 0:
+        print(f"  cache: preserved {skipped} repo files not visible to this token", flush=True)
+
+    for entry in by_hash.values():
+        loc_add += entry["additions"]
+        loc_del += entry["deletions"]
+    return [loc_add, loc_del, loc_add - loc_del, cached, len(by_hash)]
 
 
-def flush_cache(edges, filename, comment_size):
-    with open(filename, "r") as f:
-        data = f.readlines()[:comment_size] if comment_size > 0 else []
-    with open(filename, "w") as f:
-        f.writelines(data)
-        for edge in edges:
-            node = edge.get("node") if edge else None
-            if not node:
-                continue
-            f.write(
-                hashlib.sha256(node["nameWithOwner"].encode("utf-8")).hexdigest()
-                + " 0 0 0 0\n"
-            )
-
-
-def force_close_file(data, cache_comment):
-    filename = cache_path()
-    with open(filename, "w") as f:
-        f.writelines(cache_comment)
-        f.writelines(data)
-    print("Partial cache saved to", filename)
+def cache_repo_count() -> int:
+    return len(load_all_repo_caches())
 
 
 def stars_counter(data):
@@ -455,12 +608,10 @@ def find_and_replace(root, element_id, new_text):
         element.text = new_text
 
 
-def commit_counter(comment_size):
+def commit_counter(_comment_size=0):
     total_commits = 0
-    with open(cache_path(), "r") as f:
-        data = f.readlines()[comment_size:]
-    for line in data:
-        total_commits += int(line.split()[2])
+    for entry in load_all_repo_caches().values():
+        total_commits += entry["my_commits"]
     return total_commits
 
 
@@ -512,7 +663,24 @@ def parse_birthday():
     return datetime.datetime.strptime(raw, "%Y-%m-%d")
 
 
+def parse_args():
+    p = argparse.ArgumentParser(description="Update profile stats SVGs")
+    p.add_argument(
+        "--seed",
+        action="store_true",
+        help="Local seed: re-walk all repos visible to this token; never delete hidden org rows",
+    )
+    return p.parse_args()
+
+
 if __name__ == "__main__":
+    args = parse_args()
+    force_refresh = args.seed
+    if force_refresh:
+        print("Mode: --seed (refresh visible repos; preserve invisible cache rows)")
+    else:
+        print("Mode: merge (Actions-safe; append/update only)")
+
     print("Calculation times:")
     user_data, user_time = perf_counter(user_getter, USER_NAME)
     OWNER_ID, acc_date = user_data
@@ -524,20 +692,34 @@ if __name__ == "__main__":
 
     comment_size = 0
     total_loc, loc_time = perf_counter(
-        loc_query, ["OWNER", "COLLABORATOR", "ORGANIZATION_MEMBER"], comment_size
+        loc_query,
+        ["OWNER", "COLLABORATOR", "ORGANIZATION_MEMBER"],
+        comment_size,
+        force_refresh,
     )
-    formatter("LOC (cached)", loc_time) if total_loc[-1] else formatter("LOC (no cache)", loc_time)
+    # total_loc: [add, del, net, cached_flag, cache_repo_count]
+    cache_count = total_loc[4]
+    if total_loc[3]:
+        formatter("LOC (cached)", loc_time)
+    else:
+        formatter("LOC (updated)", loc_time)
+    print(f"  cache repos stored: {cache_count}")
 
     commit_data, commit_time = perf_counter(commit_counter, comment_size)
     star_data, star_time = perf_counter(graph_repos_stars, "stars", ["OWNER"])
     repo_data, repo_time = perf_counter(graph_repos_stars, "repos", ["OWNER"])
-    contrib_data, contrib_time = perf_counter(
+    contrib_api, contrib_time = perf_counter(
         graph_repos_stars, "repos", ["OWNER", "COLLABORATOR", "ORGANIZATION_MEMBER"]
     )
+    # Actions token may under-count orgs; never go below committed cache size
+    contrib_data = max(int(contrib_api), int(cache_count))
+    if contrib_data != contrib_api:
+        print(
+            f"  contributed: API={contrib_api} cache={cache_count} → using {contrib_data}"
+        )
     follower_data, follower_time = perf_counter(follower_getter, USER_NAME)
 
-    for index in range(len(total_loc) - 1):
-        total_loc[index] = "{:,}".format(total_loc[index])
+    loc_for_svg = ["{:,}".format(n) for n in total_loc[:3]]
 
     for svg_name in ("dark_mode.svg", "light_mode.svg"):
         svg_overwrite(
@@ -548,7 +730,7 @@ if __name__ == "__main__":
             repo_data,
             contrib_data,
             follower_data,
-            total_loc[:-1],
+            loc_for_svg,
         )
 
     total = user_time + age_time + loc_time + commit_time + star_time + repo_time + contrib_time
@@ -556,3 +738,6 @@ if __name__ == "__main__":
     print("Total GitHub GraphQL API calls:", sum(QUERY_COUNT.values()))
     for funct_name, count in QUERY_COUNT.items():
         print("{:<28}".format(" " + funct_name + ":"), "{:>6}".format(count))
+    print("Cache dir:", repos_cache_dir())
+    if force_refresh:
+        print("Next: commit cache/ + SVGs, push to profile repo for Actions merge runs.")
