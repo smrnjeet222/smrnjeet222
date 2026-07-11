@@ -76,7 +76,7 @@ text, tspan {
 <text x="374" y="30" fill="#c9d1d9" font-size="16px">
 <tspan x="374" y="30">smrnjeet222 ---------------------------------------------------</tspan>
 <tspan x="374" y="50" class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> .............................. </tspan><tspan class="value">macOS, windows 11, android</tspan>
-<tspan x="374" y="70" class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc" id="age_data_dots" data-slot="54"> .......................... </tspan><tspan class="value" id="age_data">26 years, 8 months, 7 days</tspan>
+<tspan x="374" y="70" class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc" id="age_data_dots" data-slot="54"> .......................... </tspan><tspan class="value" id="age_data">26 years, 8 months, 8 days</tspan>
 <tspan x="374" y="90" class="cc">. </tspan><tspan class="key">Host</tspan>:<tspan class="cc"> .......................................... </tspan><tspan class="value">Delhi, India</tspan>
 <tspan x="374" y="110" class="cc">. </tspan><tspan class="key">Kernel</tspan>:<tspan class="cc"> .................. </tspan><tspan class="value">Senior SWE · AI · Fullstack · Web3</tspan>
 <tspan x="374" y="130" class="cc">. </tspan><tspan class="key">IDE</tspan>:<tspan class="cc"> ............................................ </tspan><tspan class="value">tmux + nvim</tspan>
