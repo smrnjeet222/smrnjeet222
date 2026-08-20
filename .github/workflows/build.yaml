@@ -36,7 +36,7 @@ jobs:
       - name: Commit
         run: |-
           git add .
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
+          git config --global user.name "Simranjeet Singh"
+          git config --global user.email "48654626+smrnjeet222@users.noreply.github.com"
           git commit -m "Updated profile stats" -a || echo "No changes to commit"
           git push
